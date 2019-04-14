@@ -5,6 +5,15 @@
  */
 package ec.edu.ups.prueba;
 
+import ec.edu.ups.clase.directivo;
+import ec.edu.ups.clase.empleado;
+import ec.edu.ups.clase.empresaZapato;
+import ec.edu.ups.clase.inventario;
+import ec.edu.ups.clase.seccion;
+import ec.edu.ups.clase.socio;
+import ec.edu.ups.clase.sucursal;
+
+
 /**
  *
  * Clase para probar el programa realizado.
@@ -15,6 +24,6 @@ package ec.edu.ups.prueba;
 public class Prueba {
     public static void main(String []args)
     {
-        
+        empresaZapato Nike=new empresaZapato("Nike", 1, 12506.5, "Internacional");
     }
 }
