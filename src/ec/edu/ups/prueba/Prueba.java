@@ -25,5 +25,8 @@ public class Prueba {
     public static void main(String []args)
     {
         empresaZapato Nike=new empresaZapato("Nike", 1, 12506.5, "Internacional");
+        System.out.println(Nike);
+        System.out.println("");
+        
     }
 }

@@ -65,6 +65,18 @@ public class empleado extends directivo implements Acciones{
     public void setHoraSalida(double horaSalida) {
         this.horaSalida = horaSalida;
     }
+    
+    public String emp() {
+        return "El empleado " + super.getNombre() + " está vendiendo.";
+    }
+
+    public String emp1() {
+        return "El empleado " + super.getNombre() + " está exponiendo.";
+    }
+
+    public String emp2() {
+        return "El empleado " + super.getNombre() + " está hablando";
+    }
 
     @Override
     public String generar() {

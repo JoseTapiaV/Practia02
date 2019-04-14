@@ -67,6 +67,18 @@ public class seccion extends directivo implements Acciones{
     public void setNumeroCliente(int numeroCliente) {
         this.numeroCliente = numeroCliente;
     }
+    
+    public String sec() {
+        return "La seccion " + super.getNombre() + " está repleta.";
+    }
+
+    public String sec1() {
+        return "La seccion " + super.getNombre() + " está siendo utilizada.";
+    }
+
+    public String sec2() {
+        return "La seccion " + super.getNombre() + " está vacía";
+    }
 
     @Override
     public String generar() {

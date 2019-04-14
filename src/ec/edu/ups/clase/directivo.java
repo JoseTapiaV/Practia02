@@ -62,6 +62,18 @@ public class directivo extends empresaZapato {
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
+    
+    public String direct() {
+        return "El directivo " + super.getNombre() + " está creando.";
+    }
+
+    public String direct1() {
+        return "El directivo " + super.getNombre() + " está produciendo.";
+    }
+
+    public String direct2() {
+        return "El directivo " + super.getNombre() + " está leyendo";
+    }
 
     @Override
     public String toString() {

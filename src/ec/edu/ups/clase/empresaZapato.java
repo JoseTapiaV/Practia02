@@ -63,7 +63,7 @@ public class empresaZapato {
     public void setNacional(String nacional) {
         this.nacional = nacional;
     }
-
+    
     @Override
     public String toString() {
         return "empresaZapato{" + "nombre=" + nombre + ", codigo=" + codigo + ", ingreso=" + ingreso + ", nacional=" + nacional + '}';

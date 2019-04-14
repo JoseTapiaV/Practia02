@@ -66,6 +66,18 @@ public class inventario extends sucursal implements Acciones{
         this.numeroCliente = numeroCliente;
     }
 
+    public String inv() {
+        return "El inventario " + super.getNombre() + " está vacío.";
+    }
+
+    public String inv1() {
+        return "El inventario " + super.getNombre() + " está lleno.";
+    }
+
+    public String inv2() {
+        return "El inventario " + super.getNombre() + " está casi lleno";
+    }
+    
     @Override
     public String generar() {
         return "La empresa "+super.getNombre()+"está generando.";

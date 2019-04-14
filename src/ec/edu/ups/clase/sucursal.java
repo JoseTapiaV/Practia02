@@ -64,6 +64,18 @@ public class sucursal extends empresaZapato{
         this.ciudad = ciudad;
     }
 
+    public String suc() {
+        return "La sucursal " + super.getNombre() + " está lejana.";
+    }
+
+    public String suc1() {
+        return "La sucursal " + super.getNombre() + " está cercana.";
+    }
+
+    public String suc2() {
+        return "la sucursal " + super.getNombre() + " está a distancia media";
+    }
+    
     @Override
     public String toString() {
         return "sucursal{" + "direccion=" + direccion + ", cantidad=" + cantidad + ", telefono=" + telefono + ", ciudad=" + ciudad + '}';

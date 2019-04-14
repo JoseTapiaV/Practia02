@@ -67,6 +67,18 @@ public class socio extends sucursal implements Acciones{
         this.tiempo = tiempo;
     }
     
+    public String socio() {
+        return "El socio " + super.getNombre() + " está ocupado.";
+    }
+
+    public String socio1() {
+        return "El socio " + super.getNombre() + " está exponiendo.";
+    }
+
+    public String socio2() {
+        return "El socio " + super.getNombre() + " está creando";
+    }
+    
     @Override
     public String generar() {
         return "La empresa "+super.getNombre()+"está generando.";
