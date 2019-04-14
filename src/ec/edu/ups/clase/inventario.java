@@ -13,7 +13,7 @@ import ec.edu.ups.interfaces.Acciones;
  * @since 2019
  * @author Jose Tapia
  */
-public class inventario extends sucursal implements Acciones{
+final public class inventario extends sucursal implements Acciones{
     private String tipo;
     private int numeroComputador;
     private int numeroEmpleado;

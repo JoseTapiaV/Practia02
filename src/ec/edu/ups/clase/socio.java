@@ -14,7 +14,7 @@ import java.util.Date;
  * @since 2019
  * @author Jose Tapia
  */
-public class socio extends sucursal{
+final public class socio extends sucursal{
     private String rol;
     private Date integracion;
     private String manera;

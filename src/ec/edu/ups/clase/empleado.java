@@ -13,7 +13,7 @@ import ec.edu.ups.interfaces.Acciones;
  * @since 2019
  * @author Jose Tapia
  */
-public class empleado extends directivo{
+final public class empleado extends directivo{
     private String seccion;
     private int cantidad;
     private double horaEntrada;

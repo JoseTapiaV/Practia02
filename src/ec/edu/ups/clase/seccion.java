@@ -13,7 +13,7 @@ import ec.edu.ups.interfaces.Acciones;
  * @since 2019
  * @author Jose Tapia
  */
-public class seccion extends directivo{
+final public class seccion extends directivo{
     private String tipo;
     private String lugar;
     private int numeroArea;
