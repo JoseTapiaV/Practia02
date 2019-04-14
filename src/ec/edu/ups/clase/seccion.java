@@ -13,7 +13,7 @@ import ec.edu.ups.interfaces.Acciones;
  * @since 2019
  * @author Jose Tapia
  */
-public class seccion extends directivo implements Acciones{
+public class seccion extends directivo{
     private String tipo;
     private String lugar;
     private int numeroArea;
@@ -78,16 +78,6 @@ public class seccion extends directivo implements Acciones{
 
     public String sec2() {
         return "La seccion " + super.getNombre() + " está vacía";
-    }
-
-    @Override
-    public String generar() {
-        return "La empresa "+super.getNombre()+"está generando.";
-    }
-
-    @Override
-    public String vender() {
-        return "La empresa "+super.getNombre()+"está vendiendo.";
     }
 
     @Override

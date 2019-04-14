@@ -5,13 +5,15 @@
  */
 package ec.edu.ups.clase;
 
+import ec.edu.ups.interfaces.Acciones;
+
 /**
  * Clase padre
  * @version 1.2
  * @since 2019
  * @author Jose Tapia
  */
-public class sucursal extends empresaZapato{
+public class sucursal extends empresaZapato implements Acciones{
     private String direccion;
     private int cantidad; 
     private int telefono;
@@ -74,6 +76,16 @@ public class sucursal extends empresaZapato{
 
     public String suc2() {
         return "la sucursal " + super.getNombre() + " está a distancia media";
+    }
+    
+    @Override
+    public String generar() {
+        return "La empresa "+super.getNombre()+"está generando.";
+    }
+
+    @Override
+    public String vender() {
+        return "La empresa "+super.getNombre()+"está vendiendo.";
     }
     
     @Override

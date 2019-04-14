@@ -13,7 +13,7 @@ import ec.edu.ups.interfaces.Acciones;
  * @since 2019
  * @author Jose Tapia
  */
-public class empleado extends directivo implements Acciones{
+public class empleado extends directivo{
     private String seccion;
     private int cantidad;
     private double horaEntrada;
@@ -76,16 +76,6 @@ public class empleado extends directivo implements Acciones{
 
     public String emp2() {
         return "El empleado " + super.getNombre() + " está hablando";
-    }
-
-    @Override
-    public String generar() {
-        return "La empresa "+super.getNombre()+"está generando.";
-    }
-
-    @Override
-    public String vender() {
-        return "La empresa "+super.getNombre()+"está vendiendo.";
     }
 
     @Override

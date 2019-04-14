@@ -5,13 +5,15 @@
  */
 package ec.edu.ups.clase;
 
+import ec.edu.ups.interfaces.Acciones;
+
 /**
  * Clase padre
  * @version 1.2
  * @since 2019
  * @author Jose Tapia
  */
-public class directivo extends empresaZapato {
+public class directivo extends empresaZapato implements Acciones{
     private int codigo;
     private String cedula;
     private double sueldo;
@@ -75,6 +77,16 @@ public class directivo extends empresaZapato {
         return "El directivo " + super.getNombre() + " está leyendo";
     }
 
+    @Override
+    public String generar() {
+        return "La empresa "+super.getNombre()+"está generando.";
+    }
+
+    @Override
+    public String vender() {
+        return "La empresa "+super.getNombre()+"está vendiendo.";
+    }
+    
     @Override
     public String toString() {
         return "directivo{" + "codigo=" + codigo + ", cedula=" + cedula + ", sueldo=" + sueldo + ", direccion=" + direccion + '}';

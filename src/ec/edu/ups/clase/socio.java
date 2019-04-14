@@ -14,7 +14,7 @@ import java.util.Date;
  * @since 2019
  * @author Jose Tapia
  */
-public class socio extends sucursal implements Acciones{
+public class socio extends sucursal{
     private String rol;
     private Date integracion;
     private String manera;
@@ -78,17 +78,7 @@ public class socio extends sucursal implements Acciones{
     public String socio2() {
         return "El socio " + super.getNombre() + " está creando";
     }
-    
-    @Override
-    public String generar() {
-        return "La empresa "+super.getNombre()+"está generando.";
-    }
-
-    @Override
-    public String vender() {
-        return "La empresa "+super.getNombre()+"está vendiendo.";
-    }
-    
+        
     @Override
     public String toString() {
         return "socio{" + "rol=" + rol + ", integracion=" + integracion + ", manera=" + manera + ", tiempo=" + tiempo + '}';
